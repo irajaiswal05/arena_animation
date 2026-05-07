@@ -1,0 +1,52 @@
+.about-detailed {
+    padding: 6rem 5%;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-detailed h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    color: #bd2026;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.about-detailed > p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+.about-detailed h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #222222;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+.about-detailed ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+.about-detailed ul li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555555;
+    background-color: #f8f9fa;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    border-left: 5px solid #fff200;
+}
+.about-detailed ul li strong {
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
