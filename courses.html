@@ -1,0 +1,370 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo img {
+    height: 55px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+    color: #e50000;
+}
+.btn-primary {
+    background-color: #c1272d;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #9e1f24;
+}
+.courses-section {
+    padding: 5rem 5%;
+    background-color: #ffffff;
+}
+.courses-section h2.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.course-category-wrapper {
+    margin-bottom: 5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.course-category-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #e50000;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.category-separator {
+    border: 0;
+    height: 3px;
+    background: #facc15;
+    width: 100px;
+    margin: 0 auto 3rem auto;
+}
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+.course-card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+}
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-color: #facc15;
+}
+.course-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: #0b2e36;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.course-duration {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    color: #1a1a1a;
+    background-color: #facc15;
+    padding: 5px 12px;
+    border-radius: 4px;
+    display: inline-table;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+.course-card p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+.course-software {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    color: #e50000;
+    font-weight: 700;
+    display: block;
+    margin-top: 1rem;
+    border-top: 1px solid #eeeeee;
+    padding-top: 1rem;
+}
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 4rem 5% 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+.footer-section h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff200;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+.footer-section p, .footer-section a {
+    color: #bbbbbb;
+    line-height: 1.8;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.footer-section a:hover {
+    color: #ffffff;
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #333333;
+    color: #888888;
+    font-size: 0.9rem;
+}
+</style>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logoaa.jpg" alt="Arena Animation Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Apply Now</a>
+    </nav>
+</header>
+
+<section id="courses" class="courses-section">
+    <h2 class="main-title">COURSES WE PROVIDE</h2>
+
+    <div class="course-category-wrapper">
+        <h3 class="course-category-title">Animation Programs</h3>
+        <hr class="category-separator">
+        <div class="course-grid">
+            <a href="contact.html" class="course-card">
+                <h3>Animation Prime</h3>
+                <span class="course-duration">Duration: 27 Months</span>
+                <p>Complete pipeline of 2D & 3D animation, covering character modeling, rigging, lighting, texturing, and rendering.</p>
+                <span class="course-software">Tools: Maya, 3ds Max, Arnold</span>
+            </a>
+            <a href="contact.html" class="course-card">
+                <h3>Animation Film Design</h3>
+                <span class="course-duration">Duration: 24 Months</span>
+                <p>Focused heavily on pre-production, storyboarding, character design, and visual development for animated films.</p>
+                <span class="course-software">Tools: Toon Boom Harmony, Photoshop</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="course-category-wrapper">
+        <h3 class="course-category-title">Visual Effects (VFX) Programs</h3>
+        <hr class="category-separator">
+        <div class="course-grid">
+            <a href="contact.html" class="course-card">
+                <h3>VFX Prime</h3>
+                <span class="course-duration">Duration: 28 Months</span>
+                <p>The ultimate VFX degree-level course. Learn node-based compositing, CGI integration, and dynamics simulation.</p>
+                <span class="course-software">Tools: Nuke, Houdini, After Effects</span>
+            </a>
+            <a href="contact.html" class="course-card">
+                <h3>VFX Film Making</h3>
+                <span class="course-duration">Duration: 18 Months</span>
+                <p>Dedicated specifically to creating cinematic visual effects and post-production editing for film and television.</p>
+                <span class="course-software">Tools: Premiere Pro, After Effects</span>
+            </a>
+            <a href="contact.html" class="course-card">
+                <h3>Compositing & Editing</h3>
+                <span class="course-duration">Duration: 9 Months</span>
+                <p>A focused program on rotoscoping, match moving, color grading, and combining live-action with CGI elements.</p>
+                <span class="course-software">Tools: Nuke, Mocha, Silhouette</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="course-category-wrapper">
+        <h3 class="course-category-title">UI/UX & Web Design</h3>
+        <hr class="category-separator">
+        <div class="course-grid">
+            <a href="contact.html" class="course-card">
+                <h3>UI/UX Design</h3>
+                <span class="course-duration">Duration: 11 Months</span>
+                <p>User research, wireframing, high-fidelity prototyping, and designing intuitive digital experiences for mobile and web.</p>
+                <span class="course-software">Tools: Figma, Adobe XD</span>
+            </a>
+            <a href="contact.html" class="course-card">
+                <h3>GWDD (Graphics, Web Design & Dev)</h3>
+                <span class="course-duration">Duration: 15 Months</span>
+                <p>Extensive program covering core graphic design, typography, and responsive front-end web development.</p>
+                <span class="course-software">Tools: HTML5, CSS3, JavaScript, Illustrator</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="course-category-wrapper">
+        <h3 class="course-category-title">Gaming Programs</h3>
+        <hr class="category-separator">
+        <div class="course-grid">
+            <a href="contact.html" class="course-card">
+                <h3>Game Art Program</h3>
+                <span class="course-duration">Duration: 15 Months</span>
+                <p>Learn 3D environment modeling, character asset creation, and texturing for AAA game development.</p>
+                <span class="course-software">Tools: Unity, ZBrush, Maya</span>
+            </a>
+            <a href="contact.html" class="course-card">
+                <h3>Game Design</h3>
+                <span class="course-duration">Duration: 12 Months</span>
+                <p>Focus on game mechanics, level design, storytelling, and real-time rendering workflows.</p>
+                <span class="course-software">Tools: Unreal Engine</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="course-category-wrapper">
+        <h3 class="course-category-title">Digital Marketing & Broadcast</h3>
+        <hr class="category-separator">
+        <div class="course-grid">
+            <a href="contact.html" class="course-card">
+                <h3>Digital Advertising & Marketing</h3>
+                <span class="course-duration">Duration: 10 Months</span>
+                <p>Learn SEO, Social Media Marketing, Google Ads, and analytics to drive digital business growth.</p>
+                <span class="course-software">Tools: Google Analytics, Meta Ads, WordPress</span>
+            </a>
+            <a href="contact.html" class="course-card">
+                <h3>Broadcast Prime</h3>
+                <span class="course-duration">Duration: 18 Months</span>
+                <p>Create channel packaging, news graphics, and kinetic typography for television networks.</p>
+                <span class="course-software">Tools: Cinema 4D, After Effects</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="course-category-wrapper">
+        <h3 class="course-category-title">Short-Term Certifications</h3>
+        <hr class="category-separator">
+        <div class="course-grid">
+            <a href="contact.html" class="course-card">
+                <h3>Print & Publishing Specialist</h3>
+                <span class="course-duration">Duration: 4 Months</span>
+                <p>Master vector art, photo manipulation, and professional layout creation.</p>
+                <span class="course-software">Tools: Photoshop, Illustrator, InDesign</span>
+            </a>
+            <a href="contact.html" class="course-card">
+                <h3>Audio-Video Editing Pro</h3>
+                <span class="course-duration">Duration: 3 Months</span>
+                <p>Professional non-linear editing techniques, color grading, and sound mixing.</p>
+                <span class="course-software">Tools: Premiere Pro, Audition</span>
+            </a>
+            <a href="contact.html" class="course-card">
+                <h3>3D Architecture Visualization</h3>
+                <span class="course-duration">Duration: 5 Months</span>
+                <p>Create photorealistic interior and exterior renders for real estate and architecture.</p>
+                <span class="course-software">Tools: 3ds Max, V-Ray, AutoCAD</span>
+            </a>
+            <a href="contact.html" class="course-card">
+                <h3>Motion Graphics</h3>
+                <span class="course-duration">Duration: 4 Months</span>
+                <p>Create stunning broadcast graphics and title sequences for television and web.</p>
+                <span class="course-software">Tools: After Effects, Cinema 4D</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Arena GTB Nagar</h3>
+            <p>Empowering the next generation<br>of digital creators.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>📞 +91 9811398844</p>
+            <p>✉ arenadelhincr@gmail.com</p>
+            <p>📍 GTB Nagar, New Delhi</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Arena Animation GTB Nagar. Project Website by Ira Jaiswal.</p>
+    </div>
+</footer>
